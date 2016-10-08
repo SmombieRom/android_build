@@ -2397,7 +2397,7 @@ function set_java_home() {
     fi
 
     if [ ! "$JAVA_HOME" ]; then
-      if [ ! "$EXPERIMENTAL_USE_JAVA8" ]; then
+       if [ ! "$EXPERIMENTAL_USE_JAVA8" ]; then
         case `uname -s` in
             Darwin)
                 export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
